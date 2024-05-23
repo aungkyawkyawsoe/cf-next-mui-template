@@ -1,0 +1,24 @@
+{
+    "Dashboard": "Dashboard",
+    "Orders": "Orders",
+    "Order Entry": "Order Entry",
+    "Order Tracking": "Order Tracking",
+    "Order History": "Order History",
+    "Logistics": "Logistics",
+    "Route Planning": "Route Planning",
+    "Fleet Management": "Fleet Management",
+    "Trucks": "Trucks",
+    "Truck List": "Truck List",
+    "Truck Maintenance": "Truck Maintenance",
+    "Download CSV": "Download CSV",
+    "User Management": "User Management",
+    "User List": "User List",
+    "Roles & Permissions": "Roles & Permissions",
+    "Settings": "Settings",
+    "General Settings": "General Settings",
+    "Profile Settings": "Profile Settings",
+    "Analytics": "Analytics",
+    "Sales Analytics": "Sales Analytics",
+    "Customer Analytics": "Customer Analytics"
+  }
+  

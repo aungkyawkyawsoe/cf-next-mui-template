@@ -1,0 +1,23 @@
+{
+    "Dashboard": "ဒက်ရှ်ဘုတ်",
+    "Orders": "အော်ဒါများ",
+    "Order Entry": "အော်ဒါ ထည့်သွင်းခြင်း",
+    "Order Tracking": "အော်ဒါ မျှော်လင့်ချက်",
+    "Order History": "အော်ဒါ သမိုင်း",
+    "Logistics": "လော့ဂျစ်တစ်စ်",
+    "Route Planning": "လမ်းကြောင်း စီမံခြင်း",
+    "Fleet Management": "ယာဉ်တန်း စီမံခန့်ခွဲမှု",
+    "Trucks": "ထရပ်ကားများ",
+    "Truck List": "ထရပ်ကား စာရင်း",
+    "Truck Maintenance": "ထရပ်ကား ပြုပြင်ထိန်းသိမ်းမှု",
+    "Download CSV": "CSV ကိုဒေါင်းလုဒ်လုပ်ပါ",
+    "User Management": "အသုံးပြုသူ စီမံခန့်ခွဲမှု",
+    "User List": "အသုံးပြုသူ စာရင်း",
+    "Roles & Permissions": "အခန်းကဏ္ဍများနှင့် ခွင့်ပြုချက်များ",
+    "Settings": "ဆက်တင်များ",
+    "General Settings": "အထွေထွေ ဆက်တင်များ",
+    "Profile Settings": "ပရိုဖိုင် ဆက်တင်များ",
+    "Analytics": "အာနာလစ်တစ်စ်",
+    "Sales Analytics": "အရောင်း အာနာလစ်တစ်စ်",
+    "Customer Analytics": "ဖောက်သည် အာနာလစ်တစ်စ်"
+}
