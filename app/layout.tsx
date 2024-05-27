@@ -10,7 +10,6 @@ import themeConfig from '@configs/app-config';
 import ThemeContextProvider from '@context/ThemeContext';
 import CssBaseline from '@mui/material/CssBaseline';
 
-
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
@@ -21,10 +20,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <title>{themeConfig.appName}</title>
       </head>
       <body>
-
         <I18nextProvider i18n={i18n}>
           <ThemeContextProvider>
-
             <CssBaseline />
             <ToastProvider>
               <AuthProvider>

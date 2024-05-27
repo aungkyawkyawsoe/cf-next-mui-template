@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
         if (typeof window !== 'undefined') {
             i18n.changeLanguage(window.localStorage.getItem('i18nextLng') || 'en');
         }
-    }, []);
+    }, [i18n]);
 
     const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);

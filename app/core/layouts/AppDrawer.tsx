@@ -34,6 +34,7 @@ import appConfig from '@/core/configs/app-config';
 import { NavigationItem } from '@/core/utils/types';
 import { useAuth } from '../context/AuthContext';
 import { deepOrange } from '@mui/material/colors';
+import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@components/LanguageSwitch';
 
 const openedMixin = (theme: Theme): CSSObject => ({
@@ -135,6 +136,7 @@ export default function AppDrawer({ children }: any) {
   const ability = useAbility();
   const pathname = usePathname();
   const { logout, user } = useAuth();
+  const { t } = useTranslation();
 
   if (!themeContext) {
     throw new Error('AppDrawer must be used within a ThemeContextProvider');
@@ -216,7 +218,7 @@ export default function AppDrawer({ children }: any) {
                   {item.icon && <item.icon />}
                   {!item.icon && <appConfig.defaultNavIcon sx={{ fontSize: 8 }} />}
                 </ListItemIcon>
-                <ListItemTextView primary={`${item.title}`} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemTextView primary={t(`${item.title}`)} sx={{ opacity: open ? 1 : 0 }} />
                 {item.children && open && (openGroups[item.title] ? <ExpandLess /> : <ExpandMore />)}
               </ListItemButton>
             </ListItem>

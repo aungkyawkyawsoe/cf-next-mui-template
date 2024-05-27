@@ -1,7 +1,7 @@
 'use client';
 
 import { ThemeProvider } from '@mui/material/styles';
-import { createContext, useState, useMemo, ReactNode, useEffect } from 'react';
+import { createContext, useState, useMemo, ReactNode, useEffect, useContext } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import lightTheme from '../theme/LightTheme';
 import darkTheme from '../theme/DarkTheme';
@@ -39,6 +39,14 @@ const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
             </ThemeProvider>
         </ThemeContext.Provider>
     );
+};
+
+export const useTheme = () => {
+    const context = useContext(ThemeContext);
+    if (!context) {
+        throw new Error('useTheme must be used within an AuthProvider');
+    }
+    return context;
 };
 
 export default ThemeContextProvider;
