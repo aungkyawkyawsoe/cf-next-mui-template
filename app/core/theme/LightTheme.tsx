@@ -36,6 +36,72 @@ const darkTheme = createTheme({
     },
     typography: {
         fontFamily: `${inter.style.fontFamily}, ${myanmar.style.fontFamily}`,
+        h1: {
+            fontWeight: 700,
+            fontSize: '2.2rem',
+
+        },
+        h2: {
+            fontWeight: 600,
+            fontSize: '1.8rem',
+
+        },
+        h3: {
+            fontWeight: 600,
+            fontSize: '1.6rem',
+
+        },
+        h4: {
+            fontWeight: 600,
+            fontSize: '1.4rem',
+
+        },
+        h5: {
+            fontWeight: 500,
+            fontSize: '1.5rem',
+
+        },
+        h6: {
+            fontWeight: 500,
+            fontSize: '1.2rem',
+
+        },
+        subtitle1: {
+            fontWeight: 500,
+            fontSize: '1rem',
+
+        },
+        subtitle2: {
+            fontWeight: 500,
+            fontSize: '0.9rem',
+
+        },
+        body1: {
+            fontWeight: 400,
+            fontSize: '1rem',
+
+        },
+        body2: {
+            fontWeight: 400,
+            fontSize: '0.9rem',
+
+        },
+        caption: {
+            fontWeight: 400,
+            fontSize: '0.8rem',
+
+        },
+        overline: {
+            fontWeight: 600,
+            fontSize: '0.8rem',
+
+        },
+        button: {
+            textTransform: 'none',
+            fontWeight: 600,
+            fontSize: '1rem',
+
+        }
     },
     shape: {
         borderRadius: 10,

@@ -11,10 +11,12 @@ const Container = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  backgroundColor: theme.palette.background.default,
 }))
 
 const FallbackSpinner = () => {
+
   return (
     <Container>
       <Image alt={appConfig.appName} src="/logo.png" height={60} width={60} />

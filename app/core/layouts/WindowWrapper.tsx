@@ -37,9 +37,7 @@ const WindowWrapper = ({ children }: any) => {
         )
     } else {
         return (
-            <Box bgcolor={mode == 'dark' ? '#212121' : '#fff'} height="100vh">
-                <FallbackSpinner />
-            </Box>
+            <FallbackSpinner />
         );
     }
 };

@@ -1,10 +1,8 @@
-'use client';
-
+import React, { createContext, useState, useMemo, useEffect, useContext, ReactNode } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
-import { createContext, useState, useMemo, ReactNode, useEffect, useContext } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import lightTheme from '../theme/LightTheme';
-import darkTheme from '../theme/DarkTheme';
+import lightTheme from '@theme/LightTheme';
+import darkTheme from '@theme/DarkTheme';
 
 type ThemeContextType = {
     toggleTheme: () => void;
@@ -14,12 +12,11 @@ type ThemeContextType = {
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
-    const [mode, setMode] = useState<'light' | 'dark'>(typeof window != 'undefined' ? window.localStorage.getItem('themeMode') as 'light' | 'dark' || 'light' : 'light');
-
-    const theme = useMemo(
-        () => (mode === 'light' ? lightTheme : darkTheme),
-        [mode]
+    const [mode, setMode] = useState<'light' | 'dark'>(
+        () => (typeof window !== 'undefined' ? (window.localStorage.getItem('themeMode') as 'light' | 'dark' || 'light') : 'light')
     );
+
+    const theme = useMemo(() => (mode === 'light' ? lightTheme : darkTheme), [mode]);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -44,7 +41,7 @@ const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
 export const useTheme = () => {
     const context = useContext(ThemeContext);
     if (!context) {
-        throw new Error('useTheme must be used within an AuthProvider');
+        throw new Error('useTheme must be used within a ThemeContextProvider');
     }
     return context;
 };

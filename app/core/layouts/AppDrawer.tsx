@@ -216,7 +216,7 @@ export default function AppDrawer({ children }: any) {
                   }}
                 >
                   {item.icon && <item.icon />}
-                  {!item.icon && <appConfig.defaultNavIcon sx={{ fontSize: 8 }} />}
+                  {!item.icon && <appConfig.defaultNavIcon sx={{ ml: 2, fontSize: 8 }} />}
                 </ListItemIcon>
                 <ListItemTextView primary={t(`${item.title}`)} sx={{ opacity: open ? 1 : 0 }} />
                 {item.children && open && (openGroups[item.title] ? <ExpandLess /> : <ExpandMore />)}

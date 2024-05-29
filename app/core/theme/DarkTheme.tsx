@@ -29,12 +29,12 @@ const darkTheme = createTheme({
         },
         background: {
             default: '#121212',
-            paper: '#1E1E1E',
+            paper: '#121212',
         },
         text: {
             primary: '#FFFFFF',
-            secondary: `rgba(${mainColor}, 0.68)`,
-            disabled: `rgba(${mainColor}, 0.38)`
+            secondary: 'rgba(255, 255, 255, 0.7)',
+            disabled: 'rgba(255, 255, 255, 0.38)',
         },
         divider: `rgba(${mainColor}, 0.12)`,
         action: {
@@ -49,22 +49,82 @@ const darkTheme = createTheme({
         h1: {
             fontWeight: 700,
             fontSize: '2.2rem',
+            color: '#FFFFFF',
         },
         h2: {
             fontWeight: 600,
             fontSize: '1.8rem',
+            color: '#FFFFFF',
+        },
+        h3: {
+            fontWeight: 600,
+            fontSize: '1.6rem',
+            color: '#FFFFFF',
+        },
+        h4: {
+            fontWeight: 600,
+            fontSize: '1.4rem',
+            color: '#FFFFFF',
+        },
+        h5: {
+            fontWeight: 500,
+            fontSize: '1.5rem',
+            color: '#FFFFFF',
+        },
+        h6: {
+            fontWeight: 500,
+            fontSize: '1.2rem',
+            color: '#FFFFFF',
         },
         body1: {
             fontWeight: 400,
             fontSize: '1rem',
+            color: '#FFFFFF',
+        },
+        body2: {
+            fontWeight: 400,
+            fontSize: '0.8rem',
+            color: 'rgba(255, 255, 255, 0.7)',
+        },
+        subtitle1: {
+            fontWeight: 500,
+            fontSize: '1.2rem',
+            color: '#FFFFFF',
+        },
+        subtitle2: {
+            fontWeight: 500,
+            fontSize: '0.8rem',
+            color: 'rgba(255, 255, 255, 0.7)',
+        },
+        caption: {
+            fontWeight: 400,
+            fontSize: '0.8rem',
+            color: 'rgba(255, 255, 255, 0.7)',
+        },
+        overline: {
+            fontWeight: 600,
+            fontSize: '0.8rem',
+            color: 'rgba(255, 255, 255, 0.7)',
         },
         button: {
             textTransform: 'none',
             fontWeight: 600,
+            fontSize: '1rem',
+            color: '#FFFFFF',
         }
     },
     shape: {
         borderRadius: 12,
+    },
+    spacing: 8,
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 900,
+            lg: 1200,
+            xl: 1536,
+        },
     },
     components: {
         MuiButton: {
